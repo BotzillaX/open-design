@@ -387,6 +387,9 @@ export const ru: Dict = {
   'designFiles.upload': 'Загрузить файлы',
   'designFiles.pasteText': 'Вставить как текстовый файл',
   'designFiles.newSketch': 'Новый эскиз',
+  'designFiles.addProject': 'Добавить проект',
+  'designFiles.importProject.title': 'Импортировать проект из папки',
+  'designFiles.importProject.label': 'Импортировать проект',
   'designFiles.empty':
     'Здесь пока ничего нет. Перетащите файлы ниже или создайте эскиз / вставьте текст.',
   'designFiles.refresh': 'Обновить',

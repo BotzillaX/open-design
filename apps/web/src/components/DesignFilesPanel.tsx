@@ -17,6 +17,7 @@ interface Props {
   onUploadFiles: (files: File[]) => void;
   onPaste: () => void;
   onNewSketch: () => void;
+  onImportProject: () => void;
 }
 
 type Section = 'pages' | 'scripts' | 'images' | 'sketches' | 'other';
@@ -47,6 +48,7 @@ export function DesignFilesPanel({
   onUploadFiles,
   onPaste,
   onNewSketch,
+  onImportProject,
 }: Props) {
   const t = useT();
   const [refreshing, setRefreshing] = useState(false);
@@ -149,6 +151,15 @@ export function DesignFilesPanel({
             >
               <Icon name="upload" size={13} />
               <span>{t('designFiles.upload.label')}</span>
+            </button>
+            <button
+              type="button"
+              data-testid="design-files-import-trigger"
+              onClick={onImportProject}
+              title={t('designFiles.importProject.title')}
+            >
+              <Icon name="import" size={13} />
+              <span>{t('designFiles.importProject.label')}</span>
             </button>
           </div>
         </div>

@@ -389,6 +389,9 @@ export const esES: Dict = {
   'designFiles.upload': 'Subir archivos',
   'designFiles.pasteText': 'Pegar como archivo de texto',
   'designFiles.newSketch': 'Nuevo boceto',
+  'designFiles.addProject': 'Agregar proyecto',
+  'designFiles.importProject.title': 'Importar proyecto desde carpeta',
+  'designFiles.importProject.label': 'Importar proyecto',
   'designFiles.empty':
     'Aquí no hay nada todavía. Suelta archivos abajo, o crea un boceto / pega texto.',
   'designFiles.refresh': 'Actualizar',

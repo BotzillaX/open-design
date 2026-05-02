@@ -388,6 +388,9 @@ export const en: Dict = {
   'designFiles.upload': 'Upload files',
   'designFiles.pasteText': 'Paste as text file',
   'designFiles.newSketch': 'New sketch',
+  'designFiles.addProject': 'Add Project',
+  'designFiles.importProject.title': 'Import project from folder',
+  'designFiles.importProject.label': 'Import Project',
   'designFiles.empty':
     'Nothing here yet. Drop files below, or create a sketch / paste text.',
   'designFiles.refresh': 'Refresh',

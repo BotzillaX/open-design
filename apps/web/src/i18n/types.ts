@@ -405,6 +405,9 @@ export interface Dict {
   'designFiles.upload': string;
   'designFiles.pasteText': string;
   'designFiles.newSketch': string;
+  'designFiles.addProject': string;
+  'designFiles.importProject.title': string;
+  'designFiles.importProject.label': string;
   'designFiles.empty': string;
   'designFiles.refresh': string;
   'designFiles.delete': string;

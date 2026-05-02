@@ -387,6 +387,9 @@ export const ptBR: Dict = {
   'designFiles.upload': 'Enviar arquivos',
   'designFiles.pasteText': 'Colar como arquivo de texto',
   'designFiles.newSketch': 'Novo esboço',
+  'designFiles.addProject': 'Adicionar projeto',
+  'designFiles.importProject.title': 'Importar projeto da pasta',
+  'designFiles.importProject.label': 'Importar projeto',
   'designFiles.empty':
     'Nada aqui ainda. Arraste arquivos abaixo, crie um esboço ou cole texto.',
   'designFiles.refresh': 'Atualizar',

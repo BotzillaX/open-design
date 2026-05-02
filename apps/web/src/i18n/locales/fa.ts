@@ -389,6 +389,9 @@ export const fa: Dict = {
   'designFiles.upload': 'آپلود فایل‌ها',
   'designFiles.pasteText': 'چسباندن به عنوان فایل متنی',
   'designFiles.newSketch': 'طرح جدید',
+  'designFiles.addProject': 'افزودن پروژه',
+  'designFiles.importProject.title': 'وارد کردن پروژه از پوشه',
+  'designFiles.importProject.label': 'وارد کردن پروژه',
   'designFiles.empty':
     'هنوز هیچ چیزی اینجا نیست. فایل‌ها را رها کنید، یا یک طرح ایجاد کنید / متن بچسبانید.',
   'designFiles.refresh': 'بازنشانی',
