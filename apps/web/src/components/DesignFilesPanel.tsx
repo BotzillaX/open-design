@@ -17,7 +17,7 @@ interface Props {
   onUploadFiles: (files: File[]) => void;
   onPaste: () => void;
   onNewSketch: () => void;
-  onImportProject?: () => void;
+  onImportProject: () => void;
 }
 
 type Section = 'pages' | 'scripts' | 'images' | 'sketches' | 'other';
@@ -155,7 +155,7 @@ export function DesignFilesPanel({
             <button
               type="button"
               data-testid="design-files-import-trigger"
-              onClick={onImportProject ?? (() => console.log('import project clicked'))}
+              onClick={onImportProject}
               title={t('designFiles.importProject.title')}
             >
               <Icon name="import" size={13} />

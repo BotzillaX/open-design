@@ -60,6 +60,7 @@ export function FileWorkspace({
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [sketches, setSketches] = useState<Record<string, SketchState>>({});
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const folderInputRef = useRef<HTMLInputElement | null>(null);
 
   // Pull the persisted active tab in when the parent's hydration completes
   // (or on project switch). Fall back to the Design Files browser so a
@@ -146,6 +147,10 @@ export function FileWorkspace({
     const picked = Array.from(ev.target.files ?? []);
     ev.target.value = '';
     await uploadFiles(picked);
+  }
+
+  function handleFolderPicked(ev: React.ChangeEvent<HTMLInputElement>) {
+    ev.target.value = '';
   }
 
   async function uploadFiles(picked: File[]) {
@@ -370,6 +375,7 @@ export function FileWorkspace({
             onUploadFiles={(picked) => void uploadFiles(picked)}
             onPaste={() => setShowPasteDialog(true)}
             onNewSketch={startNewSketch}
+            onImportProject={() => folderInputRef.current?.click()}
           />
         ) : isActiveSketch && activeSketch && activeFile ? (
           activeSketch.loaded ? (
@@ -417,6 +423,14 @@ export function FileWorkspace({
         data-testid="design-files-upload-input"
         style={{ display: 'none' }}
         onChange={handleFilePicked}
+      />
+      <input
+        ref={folderInputRef}
+        type="file"
+        {...({ webkitdirectory: '' } as Record<string, string>)}
+        data-testid="design-files-folder-input"
+        style={{ display: 'none' }}
+        onChange={handleFolderPicked}
       />
       {showPasteDialog ? (
         <PasteTextDialog
